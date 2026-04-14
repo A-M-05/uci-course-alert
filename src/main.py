@@ -1,9 +1,9 @@
 import json
 import os
-from scraper import fetch_course
-from parser import validate_course_data, is_open
-from db import init_db, get_last_status, upsert_course, was_notified
-from notifier import send_email
+from .scraper import fetch_course
+from .parser import validate_course_data, is_open
+from .db import init_db, get_last_status, upsert_course, was_notified
+from .notifier import send_email
 
 COURSES_CONFIG = os.path.join(os.path.dirname(__file__), "../config/courses.json")
 
